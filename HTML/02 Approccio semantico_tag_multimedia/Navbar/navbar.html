@@ -1,0 +1,50 @@
+<!-- Replicare la struttura html della navbar presente nel file png, disponibile al download, senza usare le proprietà CSS.
+Per replicare lo scheletro html della navbar , prova ad utilizzare il tag semantico <nav>.
+Per i link presenti nella navbar, invece, prova ad utilizzare una lista non ordinata. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio Navbar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <!-- Non convinto della riuscita con unordered list -->
+            <!-- <ul>
+                <li><strong>Navbar</strong></li>
+                <li><strong>Home</strong></li>
+                <li><a href="https://www.youtube.com/">Link</a></li>
+                <li>
+                    <select>
+                        <option value="">Dropdown</option>
+                    </select>
+                </li>
+                <li>Disabled</li>
+                <li><input type="text" placeholder="Search"></li>
+                <li> <button type="button">Search</button></li>
+            </ul> -->
+
+            <!-- utilizzato span per renderizzare inline le voci del nav -->
+            <span>
+                <strong>Navbar</strong>
+                <strong>Home</strong>
+                <a href="https://www.youtube.com/">Link</a>
+                <select>
+                    <option value="">Dropdown</option>
+                </select>
+                Disabled
+                <input type="text" placeholder="Search">
+                <button type="button">Search</button>
+            </span>
+        </nav>
+        <hr>
+    </header>
+</body>
+
+</html>

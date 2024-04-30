@@ -1,0 +1,74 @@
+<!-- Crea una pagina con un articolo per un blog.
+ - La pagina dovrà contenere l'articolo e un footer con un form di sottoscrizione al blog. 
+ - L'articolo si compone di titolo, testo e immagini in fondo.
+ - Il form dovrà comporsi di un campo obbligatorio per l'inserimento della mail e un pulsante di invio. 
+
+Usa quanto più possibile i tag semantici. Alcuni dei tag semantici che puoi utilizzare sono
+ <h1>, <main>, <article>, <footer>. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Esempio di articolo per blog</h1>
+            <h2>Di seguito analizzeremo come è composto un articolo.</h2>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div>
+                <p>In questo testo utilizziamo un semplice paragrafo
+                    per scrivere una linea di testo. Questo paragrafo è contenuto
+                    all'interno di un <i>article</i> che aiuta a sezionare in modo logico
+                    il contenuto dell articolo stesso.</p>
+                <figure>
+                    <img src="assets/hands.png" width="100%">
+                    <figcaption>"A very simple outdoor workplace"</figcaption>
+                </figure>
+            </div>
+            <div>
+                <p>Inoltre questa sezione si trova all interno di un <i>main</i>
+                    cioè il corpo principale dell'articolo, mentre <i>header</i> e
+                    <i>footer</i> fanno riferimento rispettivamente all'intestazione
+                    della pagina (titolo e sottotitolo) e al fondo pagina
+                    (in questo caso un <i>form</i> di registrazione).
+                </p>
+                <p>Nel <i>form</i> ci viene chiesto di inserire i seguenti dati:
+                <ul>
+                    <l>Email</l><br>
+                    <l>Pulsante di invio</l>
+                </ul>
+                </p>
+                <figure>
+                    <img src="assets/laptop.png" width="100%">
+                    <figcaption>"Home programming workplace"</figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Passiamo dunque a vedere il nostro <i>footer</i>.</p>
+        <form action="" method="post">
+            <label for="email">Inserire email per registrarsi alla newsletter</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <button type="submit">Invia</button>
+        </form><br>
+        Per ulteriori informazioni visitare il sito
+        <a href="https://www.w3schools.com/html/html5_syntax.asp">www.w3schools.com</a>.
+    </footer>
+</body>
+
+</html>

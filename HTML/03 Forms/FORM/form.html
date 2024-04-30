@@ -1,0 +1,101 @@
+<!-- Crea un form di registrazione. Il form dovrà contenere i seguenti campi:
+    Email
+    Password
+    Nome e Cognome
+    Data di nascita
+    Numero di telefono
+    Una select con scelta di un piano di abbonamento: piano free, un gruppo con 3 piani con prezzo crescente, una checkbox per il piano Pro.
+    Numero carta
+    CVC
+    Scadenza
+    Indirizzo di fatturazione
+ -->
+
+<!-- Dato il form di partenza validare i campi tale che:
+ - Tutti i campi siano obbligatori.
+ 
+ 
+
+ - I campi relativi a numero carta di credito e CVC devono avere una prima validazione sulla lunghezza
+  e la correttezza dei valori.
+Per la validazione del numero della carta e del CVC, utilizza l'attributo pattern,
+ questo come valore prende una regular expression, cerca su internet quelle adatte per questi input -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esercizio Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--     <style>
+		label {
+			display: block
+		}
+	</style> -->
+</head>
+
+<header>
+    <h2>Inserisci i dati per registrarti</h2>
+</header>
+
+<body>
+    <form>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" autofocus>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <div>
+            <label for="nameSurname">Nome e Cognome</label>
+            <input type="text" id="nameSurname" name="nameSurname" placeholder="Nome e Cognome">
+        </div>
+        <div>
+            <label for="birthDate">Data di nascita</label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+        <div>
+            <label for="phoneNumber">Numero di telefono</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Telefono">
+        </div>
+        <div>
+            <label for="plan">Piano di abbonamento</label>
+            <select>
+                <option value="free" selected>Free</option>
+                <optgroup label="payd">
+                    <option value="20">20€</option>
+                    <option value="30">30€</option>
+                    <option value="50">50€</option>
+                </optgroup>
+            </select>
+            <label for="plan">Pro</label>
+            <input type="checkbox" id="plan" name="pro" unchecked>
+        </div>
+        <div>
+            <label for="cardNumber">Numero carta</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Numero carta">
+        </div>
+        <div>
+            <label for="number">CVC</label>
+            <input type="password" id="CVC" name="CVC" value="" placeholder="CVC">
+        </div>
+        <div>
+            <label for="cardExpire">Scadenza carta</label>
+            <input type="date" id="cardExpire" name="cardExpire">
+        </div>
+        <div>
+            <label for="address">Indirizzo di fatturazione:</label>
+            <div>
+                Comune<input type="text" id="address" name="address" placeholder="Comune">
+                Via<input type="text" id="address" name="address" placeholder="Via">
+                CAP<input type="text" id="address" name="address" placeholder="CAP">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
