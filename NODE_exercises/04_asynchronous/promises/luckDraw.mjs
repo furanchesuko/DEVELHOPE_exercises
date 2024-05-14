@@ -25,7 +25,7 @@ luckyDraw('Joe')
         console.log(result);
     })
     .catch(error => {
-        console.error("There has been an error", error);
+        console.error("There has been an error:", error.message);
     });
     
 //Un altro modo di scrivere la promise resolution
