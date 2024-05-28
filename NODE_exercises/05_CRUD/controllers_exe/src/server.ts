@@ -1,7 +1,7 @@
 import express from "express";
 import "express-async-errors";
 import morgan from "morgan";
-import {getAll, getOneById, create, updateById, deleteById} from "./controllers/planets"
+import {getAll, getOneById, create, updateById, deleteById} from "./controllers/planets.js"
 
 const app = express();
 const port = 4000;
