@@ -3,6 +3,7 @@ import express from "express";
 import "express-async-errors";
 import * as dotenv from "dotenv";
 import cors from "cors"
+import { logIn, signUp } from "./controllers/users.js"
 
 dotenv.config();
 
@@ -14,9 +15,9 @@ app.use(cors())
 
 const port = process.env.PORT || 4000
 
-app.get("/", (req, res) => {
-    res.status(200).json({msg: "hello world"})
-})
+app.post("/api/users/login", logIn)
+
+app.post("/api/users/signup", signUp)
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
